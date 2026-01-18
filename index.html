@@ -1,29 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mohammed</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy English</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-
-    <div class="game">
-
-        <div class="title"><span>X O</span> GAME</div>
-        <div class="square" id="item1" onclick="game(this.id)"></div>
-        <div class="square" id="item2" onclick="game(this.id)"></div>
-        <div class="square" id="item3" onclick="game(this.id)"></div>
-
-        <div class="square" id="item4" onclick="game(this.id)"></div>
-        <div class="square" id="item5" onclick="game(this.id)"></div>
-        <div class="square" id="item6" onclick="game(this.id)"></div>
-
-        <div class="square" id="item7" onclick="game(this.id)"></div>
-        <div class="square" id="item8" onclick="game(this.id)"></div>
-        <div class="square" id="item9" onclick="game(this.id)"></div>
-
-    </div>
-    
-    <script src="main.js"></script>
+<body class="bg-[#F5F5F5] text-gray-900 transition-colors duration-300">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
